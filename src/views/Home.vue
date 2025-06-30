@@ -1,6 +1,6 @@
 <template>
   <main class="home-page">
-    <h1>Paul McDonagh</h1>
+    <h1 class="fluctuating-text">Paul McDonagh</h1>
     <div class="image-container" @mouseover="playAlright">
       <img class="default-image" id="pfp" src="../images/pfp2.jpeg" />
       <img class="hover-image" id="hover-pfp" src="../images/nameless.png"/>
@@ -8,7 +8,7 @@
     <h2>Class: Junior Software Developer</h2>
     <p>Recent Backstory: A career change has been initiated. <br>
       In this incarnation as a software developer, I have spent some time getting to grips with Python, JavaScript, HTML and CSS. <br>
-      This has been an exciting journey and there is still so much to learn. I am currently building a couple of small projects using Vue.js and Vite and phaser.<br>
+      This has been an exciting journey and there is still so much to learn. I am currently building a couple of small projects using Vue, Vite and phaser.<br>
        I am now hoping to strike out and find a party or company with which to increase my experience and hopefully be an dedicated and invaluable team member.
      </p>
      <div class="charsheet">
@@ -39,9 +39,8 @@
           <img class="char-icon" src="../../src/icons/char/hp.svg"><h4>Hitpoints: Varies</h4>
         </div>
       </div>
-     </div>    
-   
-    <!-- <TechSlider /> -->
+     </div>
+     <img class="torment" src="../images/Symbol_torment_icon.webp" alt="Torment Symbol">    
   </main>
 </template>
 
@@ -76,18 +75,15 @@
 <style lang="scss" scoped>
   .home-page {
     display: flex;
-    // justify-content: center;
-    //align-content: center;
     align-items: center;
     flex-direction: column;
-    // height: 100%;
     width: 100vw;
     padding-right: 80px;
 
     .image-container {
       position: relative;
-      width: 175px; /* Adjust as needed */
-      height: 175px; /* Adjust as needed */
+      width: 175px; 
+      height: 175px; 
       margin: 10px;
     }
 
@@ -99,6 +95,7 @@
       width: 100%;
       border-radius: 10px;
       object-fit:fill;
+      box-shadow: var(--black-marlin) 0 0 10px 10px;
       transition: opacity 0.5s ease-in-out;
     }
 
@@ -115,42 +112,30 @@
     h1 {
       width: 100%;
       font-family: 'Audiowide';
+      font-size: 50px;
       background: var(--santa-fe);
       border-radius: 5px;
       padding: 5px;
       margin-bottom: 10px;
-      color: var(--black-marlin)
+      margin-top: 5px;
+      color: var(--black-marlin);
+      box-shadow: var(--black-marlin) 0 0 5px 5px;
     }
+
     p {
       font-size: larger;
       font-weight: 300;
     }
-    // #pfp{ 
-    //   height: 150px;
-    //   width: 150px;
-    //   border-radius: 10px;
-    //   margin: 10px;
-
-
-    //   &:hover {
-    //   transition: 2.5s ease-out;
-    //   // transform: scale(1.2);
-    //   box-shadow: var(--bossanova) 0 0 10px 10px;
-    //   //margin-bottom: 20px;
-    //   content: url(".././images/nameless.png");
-    //   height: 150px;
-    //   width: 150px;
-
-    //    }
-    // }
+    
     .charsheet{
       height:100%;
       width: 50%;
       background: url("../../src/icons/char/parchment.svg");
       background-repeat: no-repeat;
       background-size:cover;
-      padding: 85px;
+      padding: 95px;
       padding-top:80px;
+      margin-bottom: 5px;
     }
     
     .char-details{
@@ -177,10 +162,9 @@
       margin-left: auto;
 
       h1 {
-        font-size: xx-large;
+        font-size: 35px;
         padding: 10px;
       }
-
 
       .image-container {
         position: relative;
@@ -196,7 +180,7 @@
          padding: 35px;
          
         .char-details {
-          font-size: 16px;
+          font-size: 14px;
         } 
         #char-header{
           font-size: x-large;
@@ -204,6 +188,9 @@
         .char-icon {
           display: none;
         }
+    }
+    .torment {
+      display: none;
     }
   }
     

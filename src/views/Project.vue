@@ -2,13 +2,13 @@
 <main class="project-page">
     <h1>Projects Page</h1>
     <p>The latest projects I have been working on are 'StackDew Valley' and this website. This page will be updated periodically with new projects. 
-      <br> This website was created using vite, Vue.js JS, and scss. In the near future I will adding some Python Projects including Flask and SQL Lite3 to this list.
-      <br> Projects in other languages will shortly be forthcoming and I am looking to collaborate with other developers on projects in the future.
+      <br> This website was created using vite, Vue.js JS, and scss. In the near future I will adding some work in Python including Flask and SQL Lite3 to this list.
+      <br>Applications in other languages will shortly be forthcoming and I am looking to collaborate with other developers on projects in the future.
     </p>
   <div>
     <Carousel />
   </div>
-  <img src="../images/lop.png" alt="ladyofpain">
+  <img src="../images/Symbol_torment_icon.webp" alt="Torment Symbol">
 </main>
 </template>
 
@@ -41,11 +41,12 @@ export default {
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 10px;
-    color: var(--black-marlin)
+    color: var(--black-marlin);
+    box-shadow: var(--black-marlin) 0 0 10px 10px;
   }
 
   img{
-    margin-top:20px;
+    margin-top:10px;
     border-radius: 20px;
   }
 
@@ -58,11 +59,11 @@ export default {
     .carousel-item {
       width: 100%;
       height: 100%;
-
+      
       .nav-buttons {
           display: flex;
           flex-direction: column;
-          margin-bottom:20px;
+          margin-bottom:10px;
         }
 
       button {

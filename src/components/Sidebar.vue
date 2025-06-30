@@ -37,12 +37,12 @@
         </div>
 
         <div class="flex"></div>
-
         <div class="menu">
             <router-link class="button" to="/settings">
                 <span class="material-icons">settings</span>
                 <span class="text">Settings</span>
             </router-link>
+             <img src="../images/Symbol_torment_icon.webp" alt="Torment Symbol">
         </div>
 
     </aside>
@@ -69,7 +69,8 @@ const toggleMenu = () => {
         min-height: 100%;
         padding: 1rem;
 
-        background-color: var(--bossanova);
+        //background-color: var(--shingle-fawn);
+        background: linear-gradient(to bottom, var(--shingle-fawn) 0%, var(--chino) 100%);
         color: var(--light);
 
         transition: 0.2 ease-out;
@@ -85,7 +86,7 @@ const toggleMenu = () => {
 
         }
         .flex {
-            flex: 0.5 1 0;
+            flex: 1.0 1 0;
         }
 
         .logo {

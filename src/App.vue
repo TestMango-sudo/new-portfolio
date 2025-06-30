@@ -56,8 +56,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Pixelify';
-  color: var(--black-marlin);
+  font-family: 'Audiowide', sans-serif;
+  color: var(--asphalt);
 }
 
 #app {
@@ -66,7 +66,11 @@
 }
 
 body {
-  background: var(--chino);
+  background-image: url("../src/images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //background: linear-gradient(to bottom, var(--chino) 0%, var(--shingle-fawn) 100%);
   place-items:unset;
   min-width:100%;
 }

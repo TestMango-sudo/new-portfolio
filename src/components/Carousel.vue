@@ -29,16 +29,40 @@ export default {
         margin-top: 20px;
         color: var(--light);
         display: flex;
+        flex-direction: row;
+        align-items: stretch;
         min-width: 50%;
         overflow-x: scroll;
         overflow:scroll;
+        scrollbar-color: var(--santa-fe) var(--chino);
         scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: auto;
+        padding: 10px;
+        gap: 10px;
+        
+        :-webkit-scrollbar-track {
+            background: var(--chino);
+        }
+
+        @media (max-width: 768px) {
+            padding: 7px;
+            .carousel-item img {
+                height:  150px;
+                width: 175px;
+            }
+        }
+
     }
     .carousel-item {
+        height:75vh;
+        padding: 10px;
+        
         h2 {
             font-size: xx-large;
             margin-bottom: 10px;
-            color: var(--minsk)
+            color: var(--minsk);
+            text-shadow: 2px 2px 2px var(--bossanova);
         }
         p {
             font-size: large;
@@ -60,12 +84,19 @@ export default {
             }
         }
         align-content: center;
-        background-color: var(--avocado);
+        background-color: var(--chino);
+        opacity: 0.8;
         border-radius: 5px;
         margin: 10px;
         scroll-snap-align: center;
         flex-shrink: 0;
         width: 50%;
+
+        &:hover {
+            opacity: 1;
+            box-shadow: rgba(78, 27, 107, 0.8) 0 0 10px 10px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
     }
 
     .carousel img {

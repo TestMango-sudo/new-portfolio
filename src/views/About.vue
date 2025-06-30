@@ -1,17 +1,17 @@
 <template>
   <main class="about-page">
-  <h1>About Me</h1>
+  <h1 class="fluctuating-box">About Me</h1>
   <div class="about-section">
     <br>
     <p>My name is Paul and I 'm a proud father of 2, living in north-west England. 
-      <br>In this 'incarnation' as a aspiring software developer, I have spent some time getting to grips with Python, JavaScript, HTML and CSS. 
-      In the past I have worked in Tech Support, construction, engineering, customer service and manufacturing and I have gained a vast array of experience across these industries.
-      <br>Learning to code has as far been an interesting journey for me to take and there is still so much to learn. I'd never thought that I'd be starting another career at my age, but this has been so enjoyable, I don't regret it.... yet! 😃   
-      <br>In my spare time, I am an avid reader and gamer (Planescape Torment is one of my favourite rpg's of all time and inspired this website) and when not reading or gaming you'll find me doing DIY projects. I recently built from scratch a 3.6m * 2m brick outbuilding with U-PVC windows doors and tiled roof by myself.
-      <br>As a life long learner, I'm always learning new things and apart from coding I have also been trying to learning Spanish and Chinese.
-      I am currently building a couple of small projects using JavaScript, Vue, Vite and Phaser and working with a small team form Newcastle on a small project in another language.
+      <br>In this 'incarnation' as a aspiring software developer, I have been getting to grips with Python, JavaScript, HTML and CSS in an attempt to pivot to a new career. 
+      <br>In the past I have worked in Tech Support, construction, engineering, customer service and manufacturing and I have gained a vast array of experience across a variety of industries and sectors.
+      <br>Learning to code is something I always wanted to do since I was young and I have felt some tripdation about embarking on a journey like this so late. However, so far the experience has been interesting for me and there seems to be an endless amount to learn. I'd never thought that I'd be starting another career at my age, but this has been so enjoyable, I don't regret it.... yet! 😃   
+      <br>In my spare time, I am an avid reader and gamer, both TTRPGs and PC (Torment is one of my favourite rpg's of all time and inspired this website) and when not reading or gaming you'll find me doing DIY projects. I recently built from scratch a 3.6m * 2m brick outbuilding with U-PVC windows doors and wooden-framed, tiled roof by myself. I have also renovated properties in the northwest and on the continent.
+      <br>As a life long learner, I'm always learning new things and apart from coding I have also been trying to learn Spanish and Chinese.
+      Presently I am building a couple of small projects using JavaScript, Vue, Vite and Phaser and working with a small team form Newcastle on a project in another language.
       <br>
-      <img src="../images/lop.png" alt="ladyofpain">
+      <img src="../images/Symbol_torment_icon.webp" alt="Torment Symbol">
     </p>
     <br>
   </div>
@@ -49,12 +49,14 @@ export default {
       border-radius: 5px;
       padding: 5px;
       margin-bottom: 10px;
-      color: var(--black-marlin)
+      color: var(--black-marlin);
+      box-shadow: var(--black-marlin) 0 0 10px 10px;
     }
 
+  
   @media (max-width: 768px) {
     padding-left: 0.1rem;
-    font-size: x-large;
+    font-size: large;
     width: 100%;
     align-items: center;
     h1 {

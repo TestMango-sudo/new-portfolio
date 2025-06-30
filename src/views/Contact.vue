@@ -1,6 +1,6 @@
 /<template>
     <main class="contact-page">
-        <h1>Contact Me</h1>
+        <h1 class="fluctuating-box">Contact Me</h1>
         <br>
         <div class="contacts">
           <p>Presently, you can contact me or see project-code or profiles using the following methods: </p><br>
@@ -17,8 +17,13 @@
               <img class="contact-item-image" src="../../src/icons/email.svg" alt="Email">
               <a href="#" @click="emailMe">Email Me</a>
             </div>
+            <div class="contact-item">
+              <img class="contact-item-image" src="../../src/icons/cv.svg" alt="Email">
+              <a href="#">My C.V.</a>
+            </div>
           </div>
         </div>
+        <img src="../images/Symbol_torment_icon.webp" alt="Torment Symbol">
     </main>
 </template>
 
@@ -42,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 .contact-page { 
   width: 96vw;
-  font-size: xx-large;
+  font-size: x-large;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,8 +58,9 @@ export default {
     background: var(--santa-fe);
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 10px;
-    color: var(--black-marlin)
+    margin-bottom: 5px;
+    color: var(--black-marlin); 
+    box-shadow: var(--black-marlin) 0 0 10px 10px;  
   }
 
   .contact-items {
