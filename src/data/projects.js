@@ -32,11 +32,35 @@ export const projects = [
         codeLink: 'https://github.com/TestMango-sudo/nc-news-fe'
     },
     {
-        title: 'PDF to Audio',
-        type: 'PDF to Audio Converter',
-        description: 'A Tkinter based Python Application using the PDF Miner and gTTS libraries to convert PDF files into audio files. The application allows users to select a PDF file and convert the text to speech, saving it as an MP3 file.',
-        imgSrc: '',
+        title: 'Watermark Magic',
+        type: 'Watermarking Tool',
+        description: 'A Python, Application using Tkinter to build UI which allows users to add watermarks to images. The application allows users to select an image, add a watermark text, and save the watermarked image. It uses the Pillow library for image processing.',
+        imgSrc: '../../src/images/watermark_magic.PNG',
         siteLink: '',
-        codeLink: 'https://github.com/TestMango-sudo/pdf-to-audio'
+        codeLink: 'https://github.com/TestMango-sudo/Image_watermark'
     },
+     {
+        title: 'Create Writing App',
+        type: 'Creative Writing Application',
+        description: 'A Python, Application using Tkinter to build UI which allows users to create and save creative writing pieces. The application allows users to write, and save their writing pieces in a text file format. To inspire the user to write, the app will remove your writing after a set time, so you have to write it down and save it before it disappears.',
+        imgSrc: '../../src/images/creative_writing.PNG',
+        siteLink: '',
+        codeLink: 'https://github.com/TestMango-sudo/Creative_writing'
+    },
+    {
+        title: 'Virtual Library',
+        type: 'Web Application / Digital Library',
+        description: 'A Python, Application using Tkinter to build UI which allows users to store and manage their digital library. The application allows users to add, edit, and delete books from their library, and search for books by title or author. It uses SQLite for database management. Users can also save and load digital libraries from csv files.',
+        imgSrc: '../../src/images/virtual_library.PNG',
+        siteLink: '',
+        codeLink: 'https://github.com/TestMango-sudo/virtual-library'
+    },
+    // {
+    //     title: 'PDF to Audio',
+    //     type: 'PDF to Audio Converter',
+    //     description: 'A Tkinter based Python Application using the PDF Miner and gTTS libraries to convert PDF files into audio files. The application allows users to select a PDF file and convert the text to speech, saving it as an MP3 file.',
+    //     imgSrc: '',
+    //     siteLink: '',
+    //     codeLink: 'https://github.com/TestMango-sudo/pdf-to-audio'
+    // },
 ]

@@ -19,7 +19,7 @@
             </div>
             <div class="contact-item">
               <img class="contact-item-image" src="../../src/icons/cv.svg" alt="Email">
-              <a href="#">My C.V.</a>
+              <a href="https://drive.google.com/file/d/1UwqsnM47W8M-aOfEoVPy-whgnn1bLq2I/view?usp=sharing">My C.V.</a>
             </div>
           </div>
         </div>
