@@ -1,0 +1,1 @@
+import{_ as s,c as n,a as e,o}from"./index-DQp5txbc.js";const a={},c={class:"settings-page"};function r(d,t,i,p,_,l){return o(),n("div",c,t[0]||(t[0]=[e("h1",null,"Settings",-1),e("p",null,"Settings page is under construction.",-1)]))}const f=s(a,[["render",r],["__scopeId","data-v-da2da6b0"]]);export{f as default};
