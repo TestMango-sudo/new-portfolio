@@ -30,6 +30,10 @@ const router = createRouter({
             path: "/settings",
             component: () => import('../views/Settings.vue'),
             props: true
+        },
+        {
+            path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
+            component: '/'      // Redirect to home 
         }
     ] 
 })
