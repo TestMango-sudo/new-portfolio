@@ -31,10 +31,10 @@ const router = createRouter({
             component: () => import('../views/Settings.vue'),
             props: true
         },
-        // {
-        //     path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
-        //     component: Home      // Redirect to home 
-        // }
+        {
+            path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
+            component: Home      // Redirect to home 
+        }
     ] 
 })
 
