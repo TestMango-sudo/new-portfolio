@@ -7,7 +7,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: "/Home",
+            path: "/home",
             component: () => import('../views/Home.vue')
         },
         {
@@ -30,10 +30,6 @@ const router = createRouter({
             path: "/settings",
             component: () => import('../views/Settings.vue'),
             props: true
-        },
-        {
-            path: "/new-portfolio",
-            component: Home
         },
         {
             path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
