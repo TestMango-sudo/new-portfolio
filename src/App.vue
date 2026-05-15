@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <!-- Sidebar -->
+    <!-- Home -->
     <Sidebar />
 
     <router-view/>
@@ -9,6 +10,7 @@
 
 <script setup>
   import Sidebar from './components/Sidebar.vue';
+  import Home from './views/Home.vue';
 </script>
 
 
