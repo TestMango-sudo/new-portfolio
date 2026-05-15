@@ -31,10 +31,6 @@ const router = createRouter({
             component: () => import('../views/Settings.vue'),
             props: true
         },
-         {
-            path: "/new-portfolio", 
-            component: Home  
-        }
         // {
         //     path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
         //     component: Home      // Redirect to home 
