@@ -35,10 +35,10 @@ const router = createRouter({
             path: "/new-portfolio",
             component: Home
         },
-        // {
-        //     path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
-        //     component: Home      // Redirect to home 
-        // }
+        {
+            path: "/:pathMatch(.*)*", // Catch-all route for unknown paths
+            component: Home      // Redirect to home 
+        }
     ] 
 })
 
